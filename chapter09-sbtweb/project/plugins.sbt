@@ -12,3 +12,6 @@ addSbtPlugin("com.typesafe.sbt" % "sbt-less" % "1.0.6")
 
 addSbtPlugin("com.slidingautonomy.sbt" % "sbt-filter" % "1.0.1")
 
+addSbtPlugin("com.typesafe.sbteclipse" % "sbteclipse-plugin" % "3.0.0")
+
+
