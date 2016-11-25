@@ -6,7 +6,7 @@ import scalate.ScalateSupport
 class PagesController extends ScalatraCmsStack {
 
   get("/pages/:slug") {
-    contentType="text/html"
+   contentType="text/html"
     PageDao.pages find (_.slug == params("slug")) match {
       case Some(page) => ssp("/pages/show", "page" -> page)
       case None => halt(404, "not found")
